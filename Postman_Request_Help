@@ -1,0 +1,55 @@
+POSTMAN GET
+Header: GET http://127.0.0.1:5000/data
+ - Step 1) Run the API_Pokemon_GET_Postman.py file by pressing green play button in Pycharm
+ - Step 2) Navigate to Postman
+ - Step 3) Add in the header GET http://127.0.0.1:5000/data
+ - Step 4) Click send button
+ - Step 5) Response displays a list of all the pokemon in the table
+
+------------------------------------------------------------------------------------------------------------------------
+
+POSTMAN POST
+Header: POST http://127.0.0.1:5000/insert_data
+ - Step 1) Run the API_Pokemon_POST_Postman.py file by pressing green play button in Pycharm
+ - Step 2) Navigate to Postman
+ - Step 3) Add in the header POST http://127.0.0.1:5000/insert_data
+ - Step 5) Input data into Postman body:
+            {
+                "id": 8,
+                "pokemon_number": 325,
+                "pokemon_name": "Spoink",
+                "pokemon_type": "Psychic",
+                "notes": "Spoink bounces around on its tail"
+            }
+ - Step 4) Click send button
+ - Step 5) Response displays "message": "Data inserted successfully"
+
+-----------------------------------------------------------------------------------------------------------------------
+
+POSTMAN PUT
+Header: PUT http://127.0.0.1:5000/update_data
+ - Step 1) Run the API_Pokemon_PUT_Postman.py file by pressing green play button in Pycharm
+ - Step 2) Navigate to Postman
+ - Step 3) Add in the header PUT http://127.0.0.1:5000/update_data
+ - Step 5) Input data into Postman body: (this updates the notes and name of pokemon)
+            {
+                "id": 8,
+                "new_pokemon_name": "Spoink",
+                "new_notes": "Spoink bounces around on its tail. tops, its heart will stop."
+            }
+ - Step 4) Click send button
+ - Step 5) Response displays "message": "Data inserted successfully"
+
+-----------------------------------------------------------------------------------------------------------------------
+
+POSTMAN DELETE
+Header: DELETE http://127.0.0.1:5000/delete_data
+ - Step 1) Run the API_Pokemon_DELETE_Postman.py file by pressing green play button in Pycharm
+ - Step 2) Navigate to Postman
+ - Step 3) Add in the header DELETE http://127.0.0.1:5000/delete_data
+ - Step 5) Input data into Postman body: (this deletes the row of the pokemon_number)
+            {
+                "pokemon_number": "325"
+            }
+ - Step 4) Click send button
+ - Step 5) Response displays "message": "Data deleted successfully"
